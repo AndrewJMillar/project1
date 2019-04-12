@@ -21,13 +21,36 @@
 
 #include <stdio.h>
 
-int encryption(int m, int k) //function prototype for encryption
 
-
-int main(void) {
+int main() {
     
-    char alphabet[27] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '\0'}; // string array of alphabet
+    char alphabet[27] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', '\0'}; // string array of alphabet
     
+   FILE *text;
+   
+   text = fopen("input.txt", "r");
+   
+   while(feof(text) == 0) {
+       
+       char c;
+       
+       int key=1;
+       
+       fscanf(text, "%c", &c);
+       
+       if((c >= A) && (c <= Z)) {
+           
+           c = c + key;
+           
+           if(c > Z) {
+               
+               c = c % 26;
+           }
+       }
+       printf("%c", c);
+   }
+   
+   
     
     
     return 0;
