@@ -20,11 +20,11 @@ int main()   {
    
     int task;
     
-    printf("   -Task1 (Rotation Encryption) = 1-\n");     
-    printf("   -Task2 (Rotation Dectyption) = 2-\n");
-    printf("   -Task3 (Substitution Encryption) = 3-\n");
-    printf("   -Task4 (Substitution Decryption) = 4-\n");
-    printf("Enter a number to run a task: ");
+    printf("\n   -Task1 (Rotation Encryption) = 1\n");     
+    printf("   -Task2 (Rotation Dectyption) = 2\n");
+    printf("   -Task3 (Substitution Encryption) = 3\n");
+    printf("   -Task4 (Substitution Decryption) = 4\n");
+    printf("\nEnter a number to run a task: ");
     
     scanf("%d", &task);
     
