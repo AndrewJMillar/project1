@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* below in the function protypes are the test text used for the
+/* Below in the function protypes are the test text used for the
    tasks. It uses the text "the quick brown fox jumps over the
    lazy dog" which uses every letter of the alphabet.*/
 
